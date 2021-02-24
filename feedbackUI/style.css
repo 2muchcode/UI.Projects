@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333333;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+	background-color: #ffffff;
+	max-width: 400px;
+	padding: 30px;
+	box-shadow: 0 0 11px rgba(0,0,0,0.3);
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 90%;
+}	
+
+.container:hover {
+	box-shadow: 0px 0px 9px;
+}
+
+.container
+
+.container h3 {
+	line-height: 20px;
+}
+
+.container p {
+	margin: 25px 0;
+	line-height: 20px;
+}
+
+.ratings {
+	display: flex;
+	margin: 20px 0;
+}
+
+.emojiratings {
+	cursor: pointer;
+	flex: 1;
+	padding: 20px;
+	margin: 10px 5px;
+}
+
+
+.emojiratings img {
+	width: 50px;
+}
+
+.emojiratings.active, .emojiratings:hover {
+	border-radius: 5px;
+	box-shadow: 0 0 11px rgba(0,0,0,0.1);
+}
+
+.emojiratings small {
+	color: #555555;
+	display: inline-block;
+	margin: 10px 0 0;
+}
+
+.emojiratings.active small, .emojiratings:hover small {
+	color: #111111;
+}
+
+.button {
+	background-color: #333333;
+	border: 0;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 12px 30px
+}
+
+.fa-heart {
+	color: red;
+}
+
