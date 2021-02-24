@@ -25,16 +25,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 90%;
+	font-size: 100%;
 }	
 
 .container:hover {
 	box-shadow: 0px 0px 9px;
 }
 
-.container
-
-.container h3 {
+.container strong {
 	line-height: 20px;
 }
 
@@ -86,5 +84,14 @@ body {
 
 .fa-heart {
 	color: red;
+	padding-top: 30px;
 }
 
+.sm i{
+	margin: 10px;
+
+}
+
+.thankyou {
+	font-size: 23px;
+}

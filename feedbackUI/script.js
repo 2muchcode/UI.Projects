@@ -14,12 +14,14 @@ emojiRatings.forEach(emoji => {
 
 button.addEventListener("click", () => { 
 	container.innerHTML = `
-	<strong>Thank You</strong>
-	<i class="fas fa-heart"></i>
-	<p>Want to hear more from us, get connected?</p>
+	<strong class="thankyou">Thank You</strong>
+	<i class="fas fa-heart fa-3x"></i>
+	<p>Want to hear more from us?, get connected.</p>
+	<div class="sm">
 	<i class="fab fa-twitter fa-2x"></i>
 	<i class="fab fa-instagram fa-2x"></i>
 	<i class="fab fa-facebook fa-2x"></i>
+	</div>
 	`;
 });
 
