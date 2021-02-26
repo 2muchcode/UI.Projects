@@ -59,11 +59,6 @@ body {
 	grid-gap: 5px;
 }
 
-.calc-numpad .item1 {
-	grid-column: 1 / span 2;
-}
-
-
 button {
 	border: 2px solid black;
 	cursor: pointer;
@@ -89,4 +84,8 @@ button[data-op="="] {
 button[data-op="="]:hover {
 	background: white;
 	color: black;
+}
+
+button[data-op="AC"] {
+	grid-column: 1 / span 2;
 }
