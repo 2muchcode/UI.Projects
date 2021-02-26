@@ -36,8 +36,8 @@ body {
 	height: 30%;
 	padding: 12px;
 	justify-content: flex-end;
-	overflow: hidden;
 	color: white;
+	overflow: hidden;
 }
 
 .main-display {
@@ -47,7 +47,6 @@ body {
 	padding: 20px;
 	font-size: 32px;
 	justify-content: flex-end;
-	overflow: hidden;
 	color: white;
 }
 
@@ -61,17 +60,13 @@ body {
 
 button {
 	border: 2px solid black;
+	border-radius: 10px;
 	cursor: pointer;
 	outline: none;
 	font-size: 20px;
 }
 
 button:hover {
-	background: black;
-	color: white;
-}
-
-button:active {
 	background: black;
 	color: white;
 }
@@ -86,6 +81,6 @@ button[data-op="="]:hover {
 	color: black;
 }
 
-button[data-op="AC"] {
+.all-clear {
 	grid-column: 1 / span 2;
 }
