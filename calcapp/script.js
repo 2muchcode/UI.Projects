@@ -1,9 +1,12 @@
-const prevDisplay = document.querySelector(".prev-display").textContent;
-const mainDisplay = document.querySelector(".main-display");
-const numpad = document.querySelectorAll(".numpad");
-const operator = document.querySelector(".operator");
-const allClear = document.querySelector(".all-clear");
-const deleteButton = document.querySelector(".delete");
+const prevDisplay = document.querySelector("[data-prev-display]");
+const mainDisplay = document.querySelector("[data-main-display]");
+const numberButtons = document.querySelectorAll("[data-number]");
+const operatorButtons = document.querySelectorAll("[data-operator]");
+const allClear = document.querySelector("[data-all-clear]");
+const deleteButton = document.querySelector("[data-delete]");
+const equalsButton = document.querySelector("[data-equals]");
 
 
-console.log(numpad);
+
+
+

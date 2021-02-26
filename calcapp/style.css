@@ -26,7 +26,8 @@ body {
 
 .calc-display {
 	/* border: 1px solid black; */
-
+	word-wrap: break-word;
+	word-break: break-all;
 }
 
 
@@ -71,16 +72,17 @@ button:hover {
 	color: white;
 }
 
-button[data-op="="] {
+button[data-equals] {
 	background: black;
 	color: white;
+	grid-column: 1 / span 3;
 }
 
-button[data-op="="]:hover {
+button[data-equals]:hover {
 	background: white;
 	color: black;
 }
 
-.all-clear {
+button[data-all-clear] {
 	grid-column: 1 / span 2;
 }
