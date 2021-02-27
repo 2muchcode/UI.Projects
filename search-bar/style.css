@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
 	box-sizing: border-box;
@@ -15,30 +14,38 @@ body {
 	align-items: center;
 }
 
-
 .container {
+	margin-left: 20px;
 	position: relative;
-	width: 450px
+	width: 450px;
 }
 
 .search-bar {
 	height: 50px;
 	width: 90%;
 	border-radius: 20px;
-	box-shadow: 0 0 11px rgba(0,0,0,0.9);
+	box-shadow: 0 0 11px rgba(0, 0, 0, 0.9);
 	padding: 20px;
 	outline: none;
 	font-size: 20px;
 	font-weight: bold;
 	font-family: inherit;
+	cursor: pointer;
+}
+
+.search-bar:hover {
+	border: 1px solid black;
 }
 
 .container > i {
 	font-size: 23px;
 	position: relative;
-	top: 3px;
-	right: 45px;
-
+	top: 2px;
+	right: 40px;
+	color: gray;
+	cursor: pointer;
 }
 
-
+ i:hover {
+	color: black;
+}
