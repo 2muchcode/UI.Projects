@@ -11,13 +11,31 @@
 			src="https://kit.fontawesome.com/dfc0bedbec.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="./script.js"></script>
 		<title>search-bar</title>
 	</head>
 	<body>
 		<div class="container">
-			<input id="searchBar"  class="search-bar" placeholder="Search.." />
-		<i class="fas fa-search"></i>
+			<input
+				id="searchBar"
+				class="search-bar"
+				placeholder="Hello>"
+			/>
+			<div class="icons">
+				<i class="fas fa-times-circle"></i>
+				<i class="fas fa-search"></i>
+			</div>
 		</div>
+
+		<script>
+			const delButton = document.querySelector(
+				".fa-times-circle"
+			);
+
+			delButton.addEventListener("click", clearInput);
+
+			function clearInput() {
+				document.querySelector("#searchBar").value = "";
+			}
+		</script>
 	</body>
 </html>

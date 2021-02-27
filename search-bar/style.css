@@ -30,22 +30,32 @@ body {
 	font-size: 20px;
 	font-weight: bold;
 	font-family: inherit;
-	cursor: pointer;
 }
 
-.search-bar:hover {
-	border: 1px solid black;
-}
-
-.container > i {
+.icons {
 	font-size: 23px;
 	position: relative;
-	top: 2px;
-	right: 40px;
-	color: gray;
+	display: inline;
+	color: grey;
 	cursor: pointer;
+
 }
 
- i:hover {
+.fa-search {
+	position: absolute;
+	top: 6px;
+	right: 12px;
+}
+
+.fa-search:hover {
 	color: black;
 }
+
+
+.fa-times-circle {
+	position: absolute;
+	top: 6px;
+	right: 45px;
+}
+
+
