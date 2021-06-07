@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedbackEmoji {
+  display: flex;
+}
+
+.feedbackEmoji .emoji img {
+  height: 50px;
+  width: 50px;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.feedbackEmoji .emoji img:hover {
+  transform: scale(1.2);
+}
+
+.feedbackForm {
+  width: 330px;
+  margin: 10px;
+  visibility: hidden;
+}
+
+.feedbackForm.visible {
+  visibility: visible;
+}
+
+.formControl {
+  width: 100%;
+  text-align: center;
+}
+
+.formControl .input100 input,
+textarea {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.5rem 0;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  border-radius: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border: 1px solid black;
+}
+
+.formControl .input100 textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.formControl button {
+  padding: 10px;
+  width: 50%;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  border-radius: 9px;
+  border: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
