@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="feedbackEmoji">
+			<div class="emoji">
+				<img src="./assets/sad.svg" alt="sad-emoji">
+			</div>
+	<div class="emoji">
+				<img src="./assets/confused.svg" alt="confused-emoji">
+			</div>
+	<div class="emoji">
+				<img src="./assets/in-love.svg" alt="in-love-emoji">
+			</div>
+	<div class="emoji">
+				<img src="./assets/cool.svg" alt="cool-emoji">
+			</div>
+		</div>
+
+		<form class="feedbackForm">
+			<div class="formControl">
+				<div class="input100">
+				<input type="text" placeholder="Title"/>
+				</div>
+				<div class="input100">
+				<textarea placeholder="Message"></textarea>
+				</div>
+				<button type="submit">Send</button>
+			</div>
+		</form>
+	</div>
+
+	<script>
+		const emoji = document.querySelectorAll('.emoji');
+		const form = document.querySelector('form');
+
+		emoji.forEach(emo => emo.addEventListener('click', () => {
+
+			form.classList.toggle('visible');
+		}));
+
+		form.addEventListener('submit' , (e) => {
+			e.preventDefault();
+		})
+
+	</script>
+</body>
+</html>
