@@ -23,8 +23,8 @@
 			</div>
 		</div>
 
-		<div class="feedbackForm">
-			<form class="formControl">
+		<form class="feedbackForm">
+			<div class="formControl">
 				<div class="input100">
 				<input type="text" placeholder="Title"/>
 				</div>
@@ -32,19 +32,22 @@
 				<textarea placeholder="Message"></textarea>
 				</div>
 				<button type="submit">Send</button>
-			</form>
-		</div>
+			</div>
+		</form>
 	</div>
 
 	<script>
 		const emoji = document.querySelectorAll('.emoji');
-		const form = document.querySelector('.feedbackForm');
+		const form = document.querySelector('form');
 
 		emoji.forEach(emo => emo.addEventListener('click', () => {
 
 			form.classList.toggle('visible');
-				}));
+		}));
 
+		form.addEventListener('submit' , (e) => {
+			e.preventDefault();
+		})
 
 	</script>
 </body>
